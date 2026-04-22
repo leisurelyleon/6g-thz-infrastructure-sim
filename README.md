@@ -27,16 +27,59 @@ This project bridges three distinct computational layers:
 
 ```text
 6g-thz-infrastructure-sim/
-├── core_engine/              # C++ High-Frequency Physics Simulation
-│   ├── include/              # Architectural Blueprints (.hpp)
-│   └── src/                  # JCAS, AI-RAN, THz Beamforming, Zero-Energy IoT
-├── ml_fabric/                # Python PyTorch Training Pipeline
-│   ├── src/                  # CNN-LSTM Predictors & Latent Autoencoders
-│   └── exports/              # JSON Neural Weight Payloads for C++
-├── dashboard/                # React + Three.js 3D Visualization
-│   ├── src/                  # HolographicMap, SensingRadar, WebGL Services
-│   └── package.json          # Node Dependencies & Vite Build Tools
-└── docs/                     # Advanced Mathematics & Architecture Flowcharts
+├── core_engine/                          # C++ High-Frequency Simulation Core
+│   ├── src/
+│   │   ├── ai_native_ran/                # AI-Native Radio Access Network
+│   │   │   ├── NeuralScheduler.cpp       # AI-driven packet scheduling
+│   │   │   └── SemanticRouter.cpp        # 6G routes by 'meaning', not just IP
+│   │   ├── thz_beamforming/              # Terahertz (Sub-mmWave) Physics
+│   │   │   ├── HolographicMimo.cpp       # Massive Holographic MIMO control
+│   │   │   └── OrbitalAngularMomentum.cpp# OAM spatial multiplexing logic
+│   │   ├── cellular_sensing/             # Joint Communication and Sensing (JCAS)
+│   │   │   ├── RfRadarMapper.cpp         # Uses THz waves to physically map the room
+│   │   │   └── SpatialDoppler.cpp        # Tracks moving objects via signal bounce
+│   │   ├── zero_energy_iot/              # Ambient RF Energy Harvesting
+│   │   │   ├── BackscatterController.cpp # Modulates data on ambient radio waves
+│   │   │   └── EnergyHarvester.cpp       # Simulates drawing power from THz beams
+│   │   └── main.cpp                      # Engine orchestrator
+│   ├── include/                          # C++ Header Blueprints
+│   │   ├── ai_native_ran.hpp
+│   │   ├── thz_beamforming.hpp
+│   │   ├── cellular_sensing.hpp
+│   │   └── zero_energy_iot.hpp
+│   └── CMakeLists.txt                    # Complex build configuration
+├── ml_fabric/                            # Python Edge AI Models (PyTorch)
+│   ├── src/
+│   │   ├── semantic_encoder.py           # Compresses data into semantic vectors
+│   │   ├── channel_predictor.py          # Deep learning for THz channel state prediction
+│   │   └── model_exporter.py             # Exports neural weights to the C++ core
+│   ├── requirements.txt
+│   └── train_models.sh                   # Shell script to mock the training loop
+├── dashboard/                            # React + Three.js 3D Visualization
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── HolographicMap.tsx        # 3D spatial render of THz beams and objects
+│   │   │   ├── SensingRadar.tsx          # 2D overlay of the physical environment
+│   │   │   └── EnergyGrid.tsx            # Tracks Zero-Energy IoT power levels
+│   │   ├── services/
+│   │   │   ├── telemetrySocket.ts        # WebSocket to the C++ Engine
+│   │   │   └── webglRenderer.ts          # Handles the intensive 3D canvas
+│   │   ├── utils/
+│   │   │   └── tensorParsers.ts          # Parses complex neural arrays
+│   │   ├── App.tsx
+│   │   └── index.css
+│   ├── package.json
+│   └── tsconfig.json
+├── docs/                                 # Advanced Markdown Documentation
+│   ├── holographic_mimo_flow.md
+│   ├── jcas_sensing_math.md
+│   └── semantic_routing.md
+├── tests/                                # Automated Testing Suites
+│   ├── core_tests/
+│   ├── fabric_tests/
+│   └── dashboard_tests/
+├── .gitignore
+└── README.md                             # The master project manifesto             # Advanced Mathematics & Architecture Flowcharts
 ```
 
 ## 🛠️ System Boot Sequence
