@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* * Deep space and quantum fields ambient lighting.
+     * Fixing the attachment ensures the gradient doesn't scroll with the page.
+     */
+    @apply bg-slate-950 text-slate-200 antialiased;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(217, 70, 239, 0.05), transparent 30%),
+      radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.05), transparent 30%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  /* * The core structural aesthetic: Extreme transparency, 
+   * heavy backdrop blur, and subtle structural borders.
+   */
+  .glass-panel {
+    @apply bg-slate-900/30 backdrop-blur-xl border border-slate-700/50 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+}
+
+/* Minimalist Enterprise Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* Smooth pulse animation for active OAM states and Energy harvesting */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .4;
+  }
+}
