@@ -37,4 +37,4 @@ By routing purely by intent, the C++ engine can dynamically provision hardware o
 
 - **Holographic Traffic** triggers the OAM Multiplexer and allocates heavy CPU cycles for continuous metasurface adjustments.
 
-- **IoT Traffic** completely bypasses the active transmitters, instead utilizing the BackscatterController to modulate data onto existing, ambient RF waves to save power.
+- **IoT Traffic** completely bypasses the active transmitters, instead utilizing the ```BackscatterController``` to modulate data onto existing, ambient RF waves to save power.
