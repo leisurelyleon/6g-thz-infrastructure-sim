@@ -1,0 +1,8 @@
+# 6G ML Fabric - Core Dependencies
+# Utilizing PyTorch for tensor operations and neural network graphs
+
+torch>=2.2.0        # Core deep learning framework
+numpy>=1.26.0       # High-performance matrix calculations
+scipy>=1.12.0       # Scientific computing (useful for advanced THz math)
+tqdm>=4.66.0        # Progress bars for simulated training loops
+matplotlib>=3.8.0   # Optional: For plotting channel loss curves locally
