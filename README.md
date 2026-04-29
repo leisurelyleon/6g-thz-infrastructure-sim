@@ -1,6 +1,6 @@
 # 🌌 6G Terahertz & Sensing Infrastructure (2030 Standard)
 
-![6G Internet](https://www.iis.fraunhofer.de/en/profil/what-we-can-do-for-you/strategic-initiatives/5g-6g-mobile-communication-systems/jcr:content/stage/stageParsys/stage_slide/image.img.jpg/1769676738268/6G-AdobeStock-302715428.jpg)
+![6G Internet](https://sm.pcmag.com/pcmag_au/explainers/t/the-race-t/the-race-to-6g-has-started-even-if-the-case-for-it-hasnt_6ync.jpg)
 
 ![Status](https://img.shields.io/badge/Status-Predictive_Simulation-8b5cf6?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-17-00599C?style=for-the-badge&logo=c%2B%2B)
